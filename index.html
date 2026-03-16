@@ -23,16 +23,15 @@
 <!-- ===== NAVIGATION ===== -->
 <nav>
   <div class="nav-inner">
-    <a class="nav-name" href="#about">Harris Nisar</a>
     <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about"       onclick="closeNav()">About</a></li>
       <li><a href="#news"        onclick="closeNav()">News</a></li>
-      <li><a href="#education"   onclick="closeNav()">Education</a></li>
       <li><a href="#experience"  onclick="closeNav()">Experience</a></li>
       <li><a href="#publications" onclick="closeNav()">Publications &amp; Projects</a></li>
+	  <li><a href="#education"   onclick="closeNav()">Education</a></li>
     </ul>
   </div>
 </nav>
@@ -43,7 +42,7 @@
   <section id="about">
     <div class="about-grid">
       <div>
-        <img class="about-photo" src="images/headshot2-modified.png" alt="Harris Nisar" />
+        <img class="about-photo" src="images/headshot.jpg" alt="Harris Nisar" />
       </div>
       <div>
         <h1 class="about-name">Harris Nisar</h1>
@@ -51,39 +50,26 @@
           Data Scientist · John Deere</p>
 
         <p class="about-bio">
-          <!-- TODO: Write your bio paragraph here. -->
           I am a PhD Candidate in Industrial &amp; Enterprise Systems Engineering at the
-          University of Illinois Urbana-Champaign (UIUC) and a Part-Time Data Scientist at
-          John Deere. My research spans human-computer interaction, extended reality (XR),
-          and applied machine learning, with a focus on building tools that help people
-          learn and make better decisions.
-        </p>
-
-        <p class="about-advisors">
-          Advised by
-          <a href="https://ise.illinois.edu/directory/profile/dusan" target="_blank" rel="noopener">Prof. Dušan M. Stipanović</a>
-          (ISE, UIUC).
-          During my time at the
-          <a href="https://healtheng.illinois.edu/" target="_blank" rel="noopener">Healthcare Engineering Systems Center</a>
-          (HCESC), I had the pleasure of collaborating with
-          <a href="https://rehg.org/" target="_blank" rel="noopener">Prof. James M. Rehg</a>
-          and
-          <a href="https://www.albany.edu/research-economic-development/faculty/thenkurussi-kesh-kesavadas" target="_blank" rel="noopener">Prof. Thenkurussi &ldquo;Kesh&rdquo; Kesavadas</a>.
+          University of Illinois Urbana-Champaign (UIUC) where I am advised by Professor 
+          <a href="https://ise.illinois.edu/directory/profile/dusan" target="_blank" rel="noopener">Prof. Dušan M. Stipanović</a>.
+          My research focuses on developing machine learning and simulation-based (VR/AR) tools for patient interventions, human behavior modeling and training with applications 
+          in healthcare and agriculture. <strong>Broadly speaking, I am interested in how technologies can be used to improve outcomes in complex, high-stakes domains.</strong>
         </p>
 
         <div class="social-links">
           <!-- Email -->
-          <a class="social-btn" href="mailto:harrisnisarphd@gmail.com">
+          <a class="social-btn" href="mailto:harrisnisar@gmail.com">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
             Email
           </a>
           <!-- LinkedIn -->
-          <a class="social-btn" href="https://www.linkedin.com/in/harris-nisar-1b090415a/" target="_blank" rel="noopener">
+          <a class="social-btn" href="https://www.linkedin.com/in/harrisnisar" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             LinkedIn
           </a>
           <!-- GitHub -->
-          <a class="social-btn" href="https://github.com/harrisnisar" target="_blank" rel="noopener">
+          <a class="social-btn" href="https://github.com/nisar2" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
             GitHub
           </a>
@@ -94,7 +80,7 @@
             Google Scholar
           </a>
           <!-- CV -->
-          <a class="social-btn" href="pdf/resume.pdf" target="_blank" rel="noopener">
+          <a class="social-btn" href="pdf/Harris_Nisar_CV.pdf" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/></svg>
             CV
           </a>
@@ -113,94 +99,136 @@
   <section id="news">
     <h2 class="section-title">News</h2>
     <div class="news-scroll">
-
-      <div class="news-item">
-        <span class="news-date">Mar 2026</span>
-        <span>🎉 Placeholder — add your latest news item here!</span>
-      </div>
-
-      <div class="news-item">
-        <span class="news-date">Nov 2025</span>
-        <span>📄 Our paper <a href="https://diff-eye.github.io/" target="_blank" rel="noopener">DiffEye</a> — a diffusion-based model for continuous eye-tracking data generation — was accepted at <strong>NeurIPS 2025</strong>.</span>
-      </div>
-
-      <div class="news-item">
-        <span class="news-date">Aug 2019</span>
-        <span>📄 Our paper on IMR for Sepsis Prevention Medical Education was presented at <strong>IEEE VR 2019</strong> in Osaka, Japan.</span>
-      </div>
-
+		<div class="news-item">
+			<span class="news-date">Feb 2026</span>
+			<span>📄 Our paper titled Translating Behavioral Interventions into Virtual Reality: The Transcend Framework for Immersive Health Design was accepted at <strong>Frontiers in Digital Health</strong>. The link to the paper is coming soon!</span>
+		</div>
+		<div class="news-item">
+			<span class="news-date">Jan 2026</span>
+			<span>📄 Our abstract entitled "AI Models Facilitate the Automated Measurement of Social Gaze during Naturalistic Interactions," has been accepted for an oral presentation at the <strong>International Society for Autism Research Annual Meeting (INSAR 2026)</strong>. The link to the paper is coming soon!</span>
+		</div>
+		<div class="news-item">
+			<span class="news-date">Nov 2025</span>
+			<span>✈️ I traveled to San Diego to present our paper <a href="https://diff-eye.github.io/" target="_blank" rel="noopener">DiffEye</a> at <strong>NeurIPS 2025</strong>.</span>
+		</div>
+		<div class="news-item">
+			<span class="news-date">Oct 2025</span>
+			<span>🎉 I passed my PhD Prelimnary Exams! I'm happy to say that I'm officially a PhD Candidate!</span>
+		</div>
+		<div class="news-item">
+			<span class="news-date">Sept 2025</span>
+			<span>📄 Our paper <a href="https://diff-eye.github.io/" target="_blank" rel="noopener">DiffEye</a> — a diffusion-based model for continuous eye-tracking data generation — was accepted at <strong>NeurIPS 2025</strong>.</span>
+		</div>
+		<div class="news-item">
+			<span class="news-date">Sept 2025</span>
+			<span>📄 Our paper <a href="https://diff-eye.github.io/" target="_blank" rel="noopener">DiffEye</a> — a diffusion-based model for continuous eye-tracking data generation — was accepted at <strong>NeurIPS 2025</strong>.</span>
+		</div>
+		<div class="news-item">
+			<span class="news-date">Sept 2025</span>
+			<span>📄 Checkout our <a href="https://arxiv.org/abs/2504.19230" target="_blank" rel="noopener">preprint</a> on the development of a robotic trail making platform for stroke patient rehabiliation.</span>
+		</div>
+		<div class="news-item">
+			<span class="news-date">Jun 2025</span>
+			<span>🎉 ISE William A. Chittenden II Graduate Student Fellowship for AY 2025-26! This will fund my research for the final year of my PhD.</span>
+		</div>
+		<div class="news-item">
+			<span class="news-date">Jun 2025</span>
+			<span>🎉 I started working as part-time Data Scientist at John Deere. I'll be working on training neural networks to estimate field state like weed density from satellite images.</span>
+		</div>
+		<div class="news-item">
+			<span class="news-date">May 2025</span>
+			<span>🎉 I passed my PhD written exams!</span>
+		</div>
+		<div class="news-item">
+			<span class="news-date">Mar 2025</span>
+			<span>🎉 I passed my PhD oral exams!</span>
+		</div>
     </div>
   </section>
 
-  <!-- ===== EDUCATION ===== -->
-  <section id="education">
-    <h2 class="section-title">Education</h2>
-    <div class="edu-list">
 
-      <div class="edu-item">
-        <div class="edu-logo-placeholder">UIUC</div>
-        <div>
-          <div class="edu-degree">PhD, Industrial &amp; Enterprise Systems Engineering</div>
-          <div class="edu-school">University of Illinois Urbana-Champaign</div>
-          <div class="edu-year">In Progress</div>
-          <div class="edu-note">Advisor: <a href="https://ise.illinois.edu/directory/profile/dusan" target="_blank" rel="noopener">Prof. Dušan M. Stipanović</a></div>
-        </div>
-      </div>
-
-      <div class="edu-item">
-        <div class="edu-logo-placeholder">UIUC</div>
-        <div>
-          <div class="edu-degree">MS, Industrial Engineering (Advanced Analytics)</div>
-          <div class="edu-school">University of Illinois Urbana-Champaign</div>
-          <div class="edu-year">December 2022</div>
-        </div>
-      </div>
-
-      <div class="edu-item">
-        <div class="edu-logo-placeholder">UIUC</div>
-        <div>
-          <div class="edu-degree">BS, Bioengineering</div>
-          <div class="edu-school">University of Illinois Urbana-Champaign</div>
-          <div class="edu-year">May 2017</div>
-        </div>
-      </div>
-
-    </div>
-  </section>
 
   <!-- ===== EXPERIENCE ===== -->
   <section id="experience">
     <h2 class="section-title">Experience</h2>
     <div class="exp-list">
-
-      <div class="exp-item">
-        <div class="exp-logo-placeholder">John<br>Deere</div>
+	<!-- ===== Pre-doc fellowship ===== -->
+    <div class="exp-item">
+        <img class="company-logo" src="images/uiuc.png" alt="University of Illinois at Urbana-Champaign" />
         <div>
-          <div class="exp-role">Data Scientist (Part-Time)</div>
-          <div class="exp-org">John Deere</div>
-          <div class="exp-dates"><!-- TODO: Add start date --> – Present</div>
+          <div class="exp-role">Pre-Doctoral Fellow</div>
+          <div class="exp-org">Industrial and Enterprise Systems Engineering, University of Illinois at Urbana-Champaign </div>
+          <div class="exp-dates">January 2023 – Present</div>
           <ul class="exp-bullets">
-            <li><!-- TODO: Add bullet describing your role --></li>
+            <li>Recipient of ISE William A. Chittenden II Graduate Student Fellowship which fully covers my research appointment for one year (AY 2025-26). </li>
+            <li>Researching the learning dynamics of recurrent neural networks.</li>
+            <li>Developing a robotic platform for stroke rehabilitation in collaboration with occupational therapists at OSF St. Francis Hospital in Peoria, IL. </li>
+            <li>Using the platform for the collection of patient data and training machine learning models to differentiate between healthy and patient subjects and to forecast patient movement to provide assistance through the robot.</li>
+            <li>Taking technical courses in topics including machine learning, computer vision, and control theory. </li>
           </ul>
         </div>
       </div>
-
+	  <!-- ===== john deere part time data scientist ===== -->
       <div class="exp-item">
-        <div class="exp-logo-placeholder">HCESC</div>
+        <img class="company-logo" src="images/john-deere-logo.png" alt="John Deere" />
+        <div>
+          <div class="exp-role">Data Scientist (Part-Time)</div>
+          <div class="exp-org">John Deere, ISG, Machine Intelligence</div>
+          <div class="exp-dates">June 2025 – April 2026</div>
+          <ul class="exp-bullets">
+            <li>Leading the technical feasibility of predicting weed pressure from remote sensing data through deep learning to support John Deere’s precision weed sprayers (See & Spray).</li>
+            <li>Building PySpark pipelines combining times-series of satellite and equipment data from 100M+ acres, producing clean, leak-free training datasets (less than 2% duplicates, less than 5-hour runtime).</li>
+            <li>Enabling rapid training of deep learning models on large datasets (>1 billion rows) of remote sensing time-series and machine data using distributed training pipelines, Hydra configuration files and scripts to launch training runs via the Databricks Jobs API.</li>
+            <li>Presented model experimentation results to 150+ attendees at JDTechCon, John Deere’s premier internal technical conference.</li>
+            <li>Uncovered ~10% savings potential by fine-tuning See & Spray machine settings through the analysis of 100M+ acres of equipment data with PySpark and Pandas.</li>
+            <li>Determined optimal satellite provider for weed detection through analysis of 100M+ acres of equipment and imagery timeseries data (0.15 -> 0.33 correlation improvement over 40 days). </li>
+            <li>Created written and video documentation demonstrating how to use Databricks with VS Code, shared with 50+ data scientists and engineers.</li>
+          </ul>
+        </div>
+      </div>
+	  <!-- ===== hcesc research engineer ===== -->
+      <div class="exp-item">
+        <img class="company-logo" src="images/hcesc.png" alt="Healthcare Engineering Systems Center, UIUC" />
+        <div>
+          <div class="exp-role">Research Engineer</div>
+          <div class="exp-org">Healthcare Engineering Systems Center, UIUC</div>
+          <div class="exp-dates">September 2024 – May 2025</div>
+          <ul class="exp-bullets">
+            <li>Designed a new algorithm to generate realistic timeseries data (eye tracking) conditioned on natural images using diffusion and cross attention, resulting in <a href="https://diff-eye.github.io/" target="_blank" rel="noopener">DiffEye</a> which was accepted to NeurIPS 2025.</li>
+            <li>Lead data annotation efforts with a team of 9 workers, using Python-based open-source tools to enhance machine learning models for behavioral data analysis on over 200,000 frames.</li>
+            <li>Developed data pipelines using Python (Pandas, NumPy, Matplotlib) to analyze video datasets, detect annotation outliers, and automate visualization pipelines, reducing processing time by 50%.</li>
+            <li>Implemented MLOps frameworks to easily launch and track experiments using tools like TensorBoard and Weights &amp; Biases, increasing number of experiments launched from 2 a week to 1 a day.</li>
+            <li>Managed GPU computing resources of 2 high performing nodes with 8 GPUs in each for large-scale model training. Utilized these resources for distributed training, increasing experiment speed by 2x.</li>
+            <li>Facilitated IRB agreements to receive sensitive video of children performing clinical exams from 3 collaborators. Developing Data Use Agreements and pipelines to efficiently transfer the data (over 5 TB).</li>
+          </ul>
+        </div>
+      </div>
+	  <!-- ===== hcesc simulation engineer ===== -->
+      <div class="exp-item">
+        <img class="company-logo" src="images/hcesc.png" alt="Healthcare Engineering Systems Center, UIUC" />
         <div>
           <div class="exp-role">Simulation Engineer</div>
           <div class="exp-org">Healthcare Engineering Systems Center, UIUC</div>
-          <div class="exp-dates">August 2019 – Present</div>
+          <div class="exp-dates">September 2019 – September 2024</div>
           <ul class="exp-bullets">
-            <li>Led multi-disciplinary teams to develop virtual reality (VR) simulations for medical education and surgical training.</li>
-            <li>Managed end-to-end project lifecycles: ideation, proposal writing, and software production.</li>
-            <li>Administered $100,000+ in Jump Trading ARCHES funding.</li>
-            <li>Collaborated with
-              <a href="https://rehg.org/" target="_blank" rel="noopener">Prof. James M. Rehg</a>
-              and
-              <a href="https://www.albany.edu/research-economic-development/faculty/thenkurussi-kesh-kesavadas" target="_blank" rel="noopener">Prof. Thenkurussi &ldquo;Kesh&rdquo; Kesavadas</a>
-              on research initiatives.
-            </li>
+            <li>Developed 10 virtual and augmented reality simulations for education to enhance training effectiveness.</li>
+            <li>Led multi-disciplinary teams of engineers, clinicians, and artists, during full project lifecycle from ideation to deployment.</li>
+            <li>Conducted statistical analysis and applied time-series modeling techniques to enhance simulations, creating a data-driven feedback loop that improved user engagement metrics by over 50% during training sessions.</li>
+            <li>Managed over $400K in funding, producing 10+ publications and presentations on simulation-based learning.</li>
+          </ul>
+        </div>
+      </div>
+	  <!-- ===== osf simulation engineer ===== -->
+      <div class="exp-item">
+        <img class="company-logo" src="images/osf.png" alt="OSF St. Francis Hospital, Peoria, IL" />
+        <div>
+          <div class="exp-role">Simulation Engineer</div>
+          <div class="exp-org">OSF St. Francis Hospital, Peoria, IL </div>
+          <div class="exp-dates">September 2017 – September 2019</div>
+          <ul class="exp-bullets">
+            <li>Developed a Unity-based mobile application for patient education (<a href="https://www.osfinnovation.org/learn/jump-applications/about-me-3d" target="_blank" rel="noopener">About Me 3D</a>, formerly Rube-E), integrating Firebase for backend storage and a React.js-based content management system to enable real-time content updates.</li>
+            <li>Designed and built an internal web platform using HTML, CSS, and JavaScript to document simulation development workflows, standardizing system creation and delivery. Presented website to leadership receiving positive feedback.</li>
+            <li>Managed and mentored over 30 summer interns, overseeing project logistics, providing technical guidance, and fostering professional development. </li>
           </ul>
         </div>
       </div>
@@ -306,14 +334,42 @@
 
     </div><!-- /pub-list -->
   </section>
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-list">
 
+      <div class="edu-item">
+        <img class="company-logo" src="images/uiuc.png" alt="UIUC" />
+        <div>
+          <div class="edu-degree">PhD, Industrial &amp; Enterprise Systems Engineering</div>
+          <div class="edu-school">University of Illinois Urbana-Champaign</div>
+          <div class="edu-year">In Progress</div>
+          <div class="edu-note">Advisor: <a href="https://ise.illinois.edu/directory/profile/dusan" target="_blank" rel="noopener">Prof. Dušan M. Stipanović</a></div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <img class="company-logo" src="images/uiuc.png" alt="UIUC" />
+        <div>
+          <div class="edu-degree">MS, Industrial Engineering (Advanced Analytics)</div>
+          <div class="edu-school">University of Illinois Urbana-Champaign</div>
+          <div class="edu-year">December 2022</div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <img class="company-logo" src="images/uiuc.png" alt="UIUC" />
+        <div>
+          <div class="edu-degree">BS, Bioengineering</div>
+          <div class="edu-school">University of Illinois Urbana-Champaign</div>
+          <div class="edu-year">May 2017</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 </main>
-
-<!-- ===== FOOTER ===== -->
-<footer>
-  <p>Harris Nisar &mdash; <a href="mailto:harrisnisarphd@gmail.com">harrisnisarphd@gmail.com</a></p>
-  <p style="margin-top:0.4rem">Adapted from <a href="https://github.com/jonbarron/jonbarron.github.io" target="_blank" rel="noopener">Jon Barron's website template</a>.</p>
-</footer>
 
 <!-- ===== SCRIPTS ===== -->
 <script>

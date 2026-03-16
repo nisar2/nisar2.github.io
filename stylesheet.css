@@ -22,7 +22,7 @@ html { scroll-behavior: smooth; font-size: 16px; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, sans-serif;
   color: var(--text);
-  background: var(--light);
+  background: #ffffff;
   line-height: 1.65;
 }
 
@@ -36,12 +36,11 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--navy);
+  background: #ffffff;
   height: var(--nav-h);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .nav-inner {
@@ -50,18 +49,20 @@ nav {
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  border-bottom: 1px solid var(--border);
+  height: 100%;
 }
 
 .nav-name {
-  color: #fff;
+  color: var(--text);
   font-weight: 700;
   font-size: 1.05rem;
   letter-spacing: 0.02em;
   white-space: nowrap;
   text-decoration: none;
 }
-.nav-name:hover { text-decoration: none; color: #cbd5e1; }
+.nav-name:hover { text-decoration: none; color: var(--muted); }
 
 .nav-links {
   display: flex;
@@ -70,8 +71,8 @@ nav {
 }
 
 .nav-links a {
-  color: #cbd5e1;
-  font-size: 0.9rem;
+  color: var(--muted);
+  font-size: 1.35rem;
   padding: 0.35rem 0.65rem;
   border-radius: 6px;
   transition: background 0.15s, color 0.15s;
@@ -79,8 +80,8 @@ nav {
 }
 
 .nav-links a:hover {
-  background: rgba(255,255,255,0.12);
-  color: #fff;
+  background: var(--border);
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -98,7 +99,7 @@ nav {
   display: block;
   width: 24px;
   height: 2px;
-  background: #cbd5e1;
+  background: var(--muted);
   border-radius: 2px;
   transition: transform 0.2s, opacity 0.2s;
 }
@@ -139,7 +140,7 @@ section { margin-bottom: 3.5rem; scroll-margin-top: calc(var(--nav-h) + 1rem); }
 
 .about-photo {
   width: 100%;
-  max-width: 210px;
+  max-width: 810px;
   border-radius: var(--radius);
   box-shadow: 0 4px 18px rgba(0,0,0,0.12);
   display: block;
@@ -243,14 +244,10 @@ section { margin-bottom: 3.5rem; scroll-margin-top: calc(var(--nav-h) + 1rem); }
   align-items: start;
 }
 
-.edu-logo {
-  width: 60px;
-  height: 60px;
+.company-logo {
+  width: 80px;
+  height: 80px;
   object-fit: contain;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  padding: 4px;
-  background: #fff;
 }
 
 .edu-logo-placeholder {
@@ -280,18 +277,8 @@ section { margin-bottom: 3.5rem; scroll-margin-top: calc(var(--nav-h) + 1rem); }
 .exp-item {
   display: grid;
   grid-template-columns: 72px 1fr;
-  gap: 1.1rem;
+  gap: 1.5em;
   align-items: start;
-}
-
-.exp-logo {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  padding: 4px;
-  background: #fff;
 }
 
 .exp-logo-placeholder {
@@ -472,14 +459,14 @@ footer a:hover { color: var(--accent); }
     top: var(--nav-h);
     left: 0;
     right: 0;
-    background: var(--navy);
+    background: var(--light);
     padding: 0.5rem 1rem 1rem;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
     z-index: 99;
   }
   .nav-links.open { display: flex; }
   .nav-links li { width: 100%; }
-  .nav-links a { display: block; width: 100%; padding: 0.55rem 0.6rem; font-size: 1rem; }
+  .nav-links a { display: block; width: 100%; padding: 0.55rem 0.6rem; font-size: 1rem; color: var(--text); }
   .nav-toggle { display: flex; }
 
   .about-grid {
