@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harris Nisar</title>
+  <meta name="description" content="Personal academic and professional website of Harris Nisar — PhD Candidate at UIUC and Data Scientist at John Deere." />
+  <meta property="og:title" content="Harris Nisar" />
+  <meta property="og:description" content="PhD Candidate at UIUC · Data Scientist at John Deere" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="stylesheet.css" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNXBMWW25L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FNXBMWW25L');
+  </script>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="#about">Harris Nisar</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"       onclick="closeNav()">About</a></li>
+      <li><a href="#news"        onclick="closeNav()">News</a></li>
+      <li><a href="#education"   onclick="closeNav()">Education</a></li>
+      <li><a href="#experience"  onclick="closeNav()">Experience</a></li>
+      <li><a href="#publications" onclick="closeNav()">Publications &amp; Projects</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="about-grid">
+      <div>
+        <img class="about-photo" src="images/headshot2-modified.png" alt="Harris Nisar" />
+      </div>
+      <div>
+        <h1 class="about-name">Harris Nisar</h1>
+        <p class="about-title">PhD Candidate, Industrial &amp; Enterprise Systems Engineering · UIUC<br>
+          Data Scientist · John Deere</p>
+
+        <p class="about-bio">
+          <!-- TODO: Write your bio paragraph here. -->
+          I am a PhD Candidate in Industrial &amp; Enterprise Systems Engineering at the
+          University of Illinois Urbana-Champaign (UIUC) and a Part-Time Data Scientist at
+          John Deere. My research spans human-computer interaction, extended reality (XR),
+          and applied machine learning, with a focus on building tools that help people
+          learn and make better decisions.
+        </p>
+
+        <p class="about-advisors">
+          Advised by
+          <a href="https://ise.illinois.edu/directory/profile/dusan" target="_blank" rel="noopener">Prof. Dušan M. Stipanović</a>
+          (ISE, UIUC).
+          During my time at the
+          <a href="https://healtheng.illinois.edu/" target="_blank" rel="noopener">Healthcare Engineering Systems Center</a>
+          (HCESC), I had the pleasure of collaborating with
+          <a href="https://rehg.org/" target="_blank" rel="noopener">Prof. James M. Rehg</a>
+          and
+          <a href="https://www.albany.edu/research-economic-development/faculty/thenkurussi-kesh-kesavadas" target="_blank" rel="noopener">Prof. Thenkurussi &ldquo;Kesh&rdquo; Kesavadas</a>.
+        </p>
+
+        <div class="social-links">
+          <!-- Email -->
+          <a class="social-btn" href="mailto:harrisnisarphd@gmail.com">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Email
+          </a>
+          <!-- LinkedIn -->
+          <a class="social-btn" href="https://www.linkedin.com/in/harris-nisar-1b090415a/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <!-- GitHub -->
+          <a class="social-btn" href="https://github.com/harrisnisar" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
+          <!-- Google Scholar -->
+          <a class="social-btn" href="https://scholar.google.com/citations?user=PLACEHOLDER" target="_blank" rel="noopener">
+            <!-- TODO: Replace PLACEHOLDER with your Google Scholar user ID -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+            Google Scholar
+          </a>
+          <!-- CV -->
+          <a class="social-btn" href="pdf/resume.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6z"/></svg>
+            CV
+          </a>
+          <!-- PhD Thesis (placeholder) -->
+          <a class="social-btn" href="#" id="thesis-link">
+            <!-- TODO: Replace href="#" with actual thesis URL when available -->
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+            PhD Thesis
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWS ===== -->
+  <section id="news">
+    <h2 class="section-title">News</h2>
+    <div class="news-scroll">
+
+      <div class="news-item">
+        <span class="news-date">Mar 2026</span>
+        <span>🎉 Placeholder — add your latest news item here!</span>
+      </div>
+
+      <div class="news-item">
+        <span class="news-date">Nov 2025</span>
+        <span>📄 Our paper <a href="https://diff-eye.github.io/" target="_blank" rel="noopener">DiffEye</a> — a diffusion-based model for continuous eye-tracking data generation — was accepted at <strong>NeurIPS 2025</strong>.</span>
+      </div>
+
+      <div class="news-item">
+        <span class="news-date">Aug 2019</span>
+        <span>📄 Our paper on IMR for Sepsis Prevention Medical Education was presented at <strong>IEEE VR 2019</strong> in Osaka, Japan.</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-list">
+
+      <div class="edu-item">
+        <div class="edu-logo-placeholder">UIUC</div>
+        <div>
+          <div class="edu-degree">PhD, Industrial &amp; Enterprise Systems Engineering</div>
+          <div class="edu-school">University of Illinois Urbana-Champaign</div>
+          <div class="edu-year">In Progress</div>
+          <div class="edu-note">Advisor: <a href="https://ise.illinois.edu/directory/profile/dusan" target="_blank" rel="noopener">Prof. Dušan M. Stipanović</a></div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-logo-placeholder">UIUC</div>
+        <div>
+          <div class="edu-degree">MS, Industrial Engineering (Advanced Analytics)</div>
+          <div class="edu-school">University of Illinois Urbana-Champaign</div>
+          <div class="edu-year">December 2022</div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-logo-placeholder">UIUC</div>
+        <div>
+          <div class="edu-degree">BS, Bioengineering</div>
+          <div class="edu-school">University of Illinois Urbana-Champaign</div>
+          <div class="edu-year">May 2017</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="exp-list">
+
+      <div class="exp-item">
+        <div class="exp-logo-placeholder">John<br>Deere</div>
+        <div>
+          <div class="exp-role">Data Scientist (Part-Time)</div>
+          <div class="exp-org">John Deere</div>
+          <div class="exp-dates"><!-- TODO: Add start date --> – Present</div>
+          <ul class="exp-bullets">
+            <li><!-- TODO: Add bullet describing your role --></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-logo-placeholder">HCESC</div>
+        <div>
+          <div class="exp-role">Simulation Engineer</div>
+          <div class="exp-org">Healthcare Engineering Systems Center, UIUC</div>
+          <div class="exp-dates">August 2019 – Present</div>
+          <ul class="exp-bullets">
+            <li>Led multi-disciplinary teams to develop virtual reality (VR) simulations for medical education and surgical training.</li>
+            <li>Managed end-to-end project lifecycles: ideation, proposal writing, and software production.</li>
+            <li>Administered $100,000+ in Jump Trading ARCHES funding.</li>
+            <li>Collaborated with
+              <a href="https://rehg.org/" target="_blank" rel="noopener">Prof. James M. Rehg</a>
+              and
+              <a href="https://www.albany.edu/research-economic-development/faculty/thenkurussi-kesh-kesavadas" target="_blank" rel="noopener">Prof. Thenkurussi &ldquo;Kesh&rdquo; Kesavadas</a>
+              on research initiatives.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PUBLICATIONS & PROJECTS ===== -->
+  <section id="publications">
+    <h2 class="section-title">Publications &amp; Projects</h2>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all"       onclick="filterPubs(this)">All</button>
+      <button class="filter-btn"        data-filter="published" onclick="filterPubs(this)">Published</button>
+      <button class="filter-btn"        data-filter="project"   onclick="filterPubs(this)">Projects</button>
+    </div>
+
+    <div class="pub-list" id="pubList">
+
+      <!-- ── DiffEye ── -->
+      <div class="pub-card" data-type="published">
+        <div class="pub-thumb-placeholder">🧠</div>
+        <div class="pub-content">
+          <div class="pub-badges">
+            <span class="badge badge-venue">NeurIPS 2025</span>
+          </div>
+          <div class="pub-title">DiffEye: Diffusion-Based Continuous Eye-Tracking Data Generation Conditioned on Natural Images</div>
+          <div class="pub-authors">Ozgur Kara, <strong>Harris Nisar</strong>, James M. Rehg</div>
+          <p class="pub-desc">We propose DiffEye, a diffusion-based generative model for creating realistic, raw eye-tracking trajectories conditioned on natural images, which outperforms existing methods on scanpath generation tasks.</p>
+          <div class="pub-links">
+            <a class="pub-link" href="https://diff-eye.github.io/" target="_blank" rel="noopener">Project</a>
+            <a class="pub-link" href="https://arxiv.org/abs/2509.16767" target="_blank" rel="noopener">Paper</a>
+            <a class="pub-link" href="https://github.com/RehgLab/diffeye" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── IEEE VR 2019 ── -->
+      <div class="pub-card" data-type="published">
+        <div class="pub-thumb-placeholder">🏥</div>
+        <div class="pub-content">
+          <div class="pub-badges">
+            <span class="badge badge-venue-alt">IEEE VR 2019</span>
+          </div>
+          <div class="pub-title">Efficacy Study on Interactive Mixed Reality (IMR) Software with Sepsis Prevention Medical Education</div>
+          <div class="pub-authors">Naveen Sankaran, <strong>Harris J. Nisar</strong></div>
+          <p class="pub-desc">Presented at IEEE Virtual Reality, Osaka, Japan, March 25–27, 2019. Evaluated the effectiveness of an interactive mixed reality application for teaching sepsis prevention.</p>
+          <div class="pub-links">
+            <!-- TODO: Add paper link if available -->
+          </div>
+        </div>
+      </div>
+
+      <!-- ── IEEE SeGAH (Under Review) ── -->
+      <div class="pub-card" data-type="published">
+        <div class="pub-thumb-placeholder">🍽️</div>
+        <div class="pub-content">
+          <div class="pub-badges">
+            <span class="badge badge-review">Under Review · IEEE SeGAH</span>
+          </div>
+          <div class="pub-title">Face and Content Validation of Food Safety Training in Virtual Reality (VR)</div>
+          <div class="pub-authors">Lydia Lee, <strong>Harris J. Nisar</strong></div>
+          <p class="pub-desc">Validation study for a VR-based food safety training module, assessing fidelity and content coverage for educational effectiveness.</p>
+          <div class="pub-links">
+            <!-- Links will be added upon publication -->
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Data Collection Portal (Project) ── -->
+      <div class="pub-card" data-type="project">
+        <img class="pub-thumb" src="images/train_arch_caption_gen.png" alt="Data Collection Portal" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="pub-thumb-placeholder" style="display:none">🔬</div>
+        <div class="pub-content">
+          <div class="pub-badges">
+            <span class="badge badge-project">Project</span>
+          </div>
+          <div class="pub-title">Data Collection Portal for Pose Estimation</div>
+          <div class="pub-authors"><strong>Harris Nisar</strong></div>
+          <p class="pub-desc">A modular, scalable web portal for collecting images and videos for pose estimation research. Features a demo facial landmark detector powered by deep learning.</p>
+          <div class="pub-links">
+            <a class="pub-link" href="https://www.faciallandmarkdetector.com/" target="_blank" rel="noopener">Demo</a>
+            <a class="pub-link" href="https://github.com/harrisnisar" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── VR Simulation Projects (Project) ── -->
+      <div class="pub-card" data-type="project">
+        <div class="pub-thumb-placeholder">🥽</div>
+        <div class="pub-content">
+          <div class="pub-badges">
+            <span class="badge badge-project">Project</span>
+          </div>
+          <div class="pub-title">Medical &amp; Surgical VR Simulations</div>
+          <div class="pub-authors"><strong>Harris Nisar</strong> · Healthcare Engineering Systems Center, UIUC</div>
+          <p class="pub-desc">A suite of VR training applications built in Unity3D for the Oculus Quest 2, covering: Joviality (psychotherapy for terminal illness), Neonatal UVC training, ECMO procedure teaching, Spay VR (veterinary surgery), Brain VR (neuroanatomy), and Road to Birth (obstetrics). All projects involve end-to-end development from SME consultation to deployment.</p>
+          <div class="pub-links">
+            <!-- TODO: Add links to demos or project pages -->
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /pub-list -->
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>Harris Nisar &mdash; <a href="mailto:harrisnisarphd@gmail.com">harrisnisarphd@gmail.com</a></p>
+  <p style="margin-top:0.4rem">Adapted from <a href="https://github.com/jonbarron/jonbarron.github.io" target="_blank" rel="noopener">Jon Barron's website template</a>.</p>
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+  // ── Mobile nav toggle ──
+  function toggleNav() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+  function closeNav() {
+    document.getElementById('navLinks').classList.remove('open');
+  }
+
+  // ── Publications filter ──
+  function filterPubs(btn) {
+    const filter = btn.dataset.filter;
+
+    // Update active button
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // Show/hide cards
+    document.querySelectorAll('#pubList .pub-card').forEach(card => {
+      if (filter === 'all' || card.dataset.type === filter) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
