@@ -53,7 +53,7 @@
           I am a PhD Candidate in Industrial &amp; Enterprise Systems Engineering at the
           University of Illinois Urbana-Champaign (UIUC) where I am advised by Professor 
           <a href="https://ise.illinois.edu/directory/profile/dusan" target="_blank" rel="noopener">Prof. Dušan M. Stipanović</a>.
-          My research focuses on developing machine learning and simulation-based (VR/AR) tools for patient interventions, human behavior modeling and training with applications 
+          My research focuses on developing artificial intelligence (computer vision/machine learning)and simulation-based (haptics/VR/AR) tools for patient interventions, human behavior modeling and training with applications 
           in healthcare and agriculture. <strong>Broadly speaking, I am interested in how technologies can be used to improve outcomes in complex, high-stakes domains.</strong>
         </p>
 
@@ -250,7 +250,8 @@
 
       <!-- ── DiffEye ── -->
       <div class="pub-card" data-type="published">
-        <div class="pub-thumb-placeholder">🧠</div>
+        <img class="pub-thumb" src="images/diffeye_teaser.png" alt="DiffEye" onclick="openImgModal(this.src,this.alt)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="pub-thumb-placeholder" style="display:none">🧠</div>
         <div class="pub-content">
           <div class="pub-badges">
             <span class="badge badge-venue">NeurIPS 2025</span>
@@ -262,6 +263,9 @@
             <a class="pub-link" href="https://diff-eye.github.io/" target="_blank" rel="noopener">Project</a>
             <a class="pub-link" href="https://arxiv.org/abs/2509.16767" target="_blank" rel="noopener">Paper</a>
             <a class="pub-link" href="https://github.com/RehgLab/diffeye" target="_blank" rel="noopener">Code</a>
+			<a class="pub-link" href="https://neurips.cc/virtual/2025/loc/san-diego/poster/118243#presentation-embed-39046649" target="_blank" rel="noopener">Video</a>
+     	 	<a class="pub-link" href="images/diffeye_poster.png" target="_blank" rel="noopener">Poster</a>
+			<a class="pub-link" href="pdf/diffeye_slides.pdf" target="_blank" rel="noopener">Slides</a>
           </div>
         </div>
       </div>
@@ -344,7 +348,7 @@
         <div>
           <div class="edu-degree">PhD, Industrial &amp; Enterprise Systems Engineering</div>
           <div class="edu-school">University of Illinois Urbana-Champaign</div>
-          <div class="edu-year">In Progress</div>
+          <div class="edu-year">January 2022 - July 2026 (expected)</div>
           <div class="edu-note">Advisor: <a href="https://ise.illinois.edu/directory/profile/dusan" target="_blank" rel="noopener">Prof. Dušan M. Stipanović</a></div>
         </div>
       </div>
@@ -354,7 +358,7 @@
         <div>
           <div class="edu-degree">MS, Industrial Engineering (Advanced Analytics)</div>
           <div class="edu-school">University of Illinois Urbana-Champaign</div>
-          <div class="edu-year">December 2022</div>
+          <div class="edu-year">January 2020 - December 2022</div>
         </div>
       </div>
 
@@ -363,7 +367,7 @@
         <div>
           <div class="edu-degree">BS, Bioengineering</div>
           <div class="edu-school">University of Illinois Urbana-Champaign</div>
-          <div class="edu-year">May 2017</div>
+          <div class="edu-year">August 2013 - May 2017</div>
         </div>
       </div>
 
@@ -371,8 +375,29 @@
   </section>
 </main>
 
+<!-- ===== LIGHTBOX MODAL ===== -->
+<div class="modal-overlay" id="imgModal" onclick="closeImgModal()">
+  <button class="modal-close" onclick="closeImgModal()" aria-label="Close">&times;</button>
+  <img class="modal-img" id="modalImg" src="" alt="" onclick="event.stopPropagation()">
+</div>
+
 <!-- ===== SCRIPTS ===== -->
 <script>
+  // ── Lightbox modal ──
+  function openImgModal(src, alt) {
+    document.getElementById('modalImg').src = src;
+    document.getElementById('modalImg').alt = alt;
+    document.getElementById('imgModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeImgModal() {
+    document.getElementById('imgModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeImgModal();
+  });
+
   // ── Mobile nav toggle ──
   function toggleNav() {
     document.getElementById('navLinks').classList.toggle('open');
