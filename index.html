@@ -281,6 +281,7 @@
     <div class="filter-bar">
       <button class="filter-btn active" data-filter="all"       onclick="filterPubs(this)">All</button>
       <button class="filter-btn"        data-filter="published" onclick="filterPubs(this)">Published</button>
+	  <button class="filter-btn"        data-filter="under_review"   onclick="filterPubs(this)">Under Review</button>
       <button class="filter-btn"        data-filter="project"   onclick="filterPubs(this)">Projects</button>
     </div>
 
@@ -304,6 +305,28 @@
 			<a class="pub-link" href="https://neurips.cc/virtual/2025/loc/san-diego/poster/118243#presentation-embed-39046649" target="_blank" rel="noopener">Video</a>
      	 	<a class="pub-link" href="images/diffeye_poster.png" target="_blank" rel="noopener">Poster</a>
 			<a class="pub-link" href="pdf/diffeye_slides.pdf" target="_blank" rel="noopener">Slides</a>
+          </div>
+        </div>
+      </div>
+
+	  <div class="pub-list" id="pubList">
+
+      <!-- ── RTM ── -->
+      <div class="pub-card" data-type="under_review">
+        <img class="pub-thumb" src="images/rtm_teaser.png" alt="Robotic Trail Maker" onclick="openImgModal(this.src,this.alt)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="pub-thumb-placeholder" style="display:none">🧠</div>
+        <div class="pub-content">
+          <div class="pub-badges">
+            <span class="badge badge-review">Under Review</span>
+          </div>
+          <div class="pub-title">Robotic Trail Maker Platform for Rehabilitation in Neurological Conditions: Clinical Use Cases</div>
+          <div class="pub-authors">Srikar Annamraju<sup>*</sup>, <strong>Harris Nisar</strong><sup>*</sup>, Dayu Xia<sup>*</sup>, Shankar A Deka, Anne Horowitz, Nadica Miljković, Dušan M Stipanović <span style="font-size:0.8em; color:var(--muted);">(* equal contribution, ordered by last name)</span></div>
+          <p class="pub-desc">We propose a robotic platform designed for rehabilitation in neurological conditions where patients complete trajectories with a robotic device which can assist. We used this platform to collect data from 10 stroke patients and 11 healthy subjects and found signficant differences between these populations when using our platform. We also used this data to train deep learning models to classify these populations and to forecast their movements.</p>
+          <div class="pub-links">
+            <a class="pub-link" href="https://arxiv.org/abs/2504.19230" target="_blank" rel="noopener">Pre-Print</a>
+            <a class="pub-link" href="https://github.com/nisar2/robotic-rehab-unity" target="_blank" rel="noopener">Unity Code</a>
+            <a class="pub-link" href="https://github.com/nisar2/robotic-rehab-data-analysis" target="_blank" rel="noopener">Data &amp; Code for Analysis</a>
+			<a class="pub-link" href="https://youtu.be/R3TCSMSE2RQ" target="_blank" rel="noopener">Video</a>
           </div>
         </div>
       </div>
